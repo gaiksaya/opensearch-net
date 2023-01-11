@@ -29,4 +29,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: opensearch-net-${{env.VERSION}}-release-candidate
-        path: build/output/*.nupkg
+        path: build/output/*
