@@ -27,7 +27,7 @@ jobs:
             cp $file artifacts
           done
         tar -czf artifacts.tar.gz artifacts
-        ls -l artifacts
+        ls -l
     - name: Draft a release
       uses: softprops/action-gh-release@v1
       with:
