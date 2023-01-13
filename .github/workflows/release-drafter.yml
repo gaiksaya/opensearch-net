@@ -1,8 +1,9 @@
 name: Draft a Release
 
-on: 
-  tags:
-    - '*'
+on:
+  push: 
+    tags:
+      - '*'
 env:
     VERSION: 1.2.1
 jobs:
