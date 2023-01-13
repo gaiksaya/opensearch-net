@@ -22,7 +22,10 @@ jobs:
       run: |
         dotnet pack OpenSearch.sln --configuration Release
         mkdir artifacts 
-        for file in `ls src/*/bin/Release/*.nupkg`; do; cp $file artifacts; done
+        for file in `ls src/*/bin/Release/*.nupkg`
+          do
+            cp $file artifacts
+          done
         tar -czf artifacts.tar.gz artifacts
     - name: Draft a release
       uses: softprops/action-gh-release@v1
