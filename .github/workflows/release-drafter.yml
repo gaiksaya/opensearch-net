@@ -2,14 +2,12 @@ name: Draft a release
 
 on:
   push:
-    tags:
-      - "*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      issue: write
+      issues: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
