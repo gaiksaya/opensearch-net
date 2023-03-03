@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      id-token: write
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
