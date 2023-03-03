@@ -24,7 +24,7 @@ jobs:
           approvers: ${{ steps.get_approvers.outputs.approvers }}
           minimum-approvals: 1
           issue-title: 'Release opensearch-net'
-          issue-body: "Please approve or deny the release of opensearch-net **TAG**: ${{ github.ref_name }}  **COMMIT**: ${{ github.sha }}"
+          issue-body: "Please approve or deny the release of opensearch-net \n **TAG**: ${{ github.ref_name }}  \n **COMMIT**: ${{ github.sha }}"
           # exclude-workflow-initiator-as-approver: true
       - name: Release
         uses: softprops/action-gh-release@v1
